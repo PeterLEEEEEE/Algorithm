@@ -1,0 +1,27 @@
+# .py
+
+leap = 0
+year = int(input())
+
+if year % 4 == 0:
+    if year % 400 == 0 or year % 100 != 0:
+        leap = 1
+
+
+print(leap)
+
+
+# Node.js
+
+const fs = require('fs');
+const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+const year = Number(input[0]);
+
+let leap = 0;
+
+if (year % 4 === 0){
+    if(year % 100 !== 0 || year % 400 === 0){
+        leap = 1
+    }
+}
+console.log(leap);
