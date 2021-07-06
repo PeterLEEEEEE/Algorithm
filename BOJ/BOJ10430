@@ -1,0 +1,31 @@
+// node.js
+
+const fs = require('fs');
+const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+const a = Number(input[0]);
+const b = Number(input[1]);
+const c = Number(input[2]);
+
+let ans1 = (a+b)%c;
+let ans2 = ((a % c) + (b % c)) % c;
+let ans3 = (a * b) % c;
+let ans4 = ((a % c) * (b % c)) % c;
+
+console.log(ans1);
+console.log(ans2);
+console.log(ans3);
+console.log(ans4);
+
+
+# python
+
+a, b, c = map(int, input().split())
+ans1 = (a+b) % c
+ans2 = ((a % c) + (b % c)) % c
+ans3 = (a * b) % c
+ans4 = ((a % c) * (b % c)) % c
+
+print(ans1)
+print(ans2)
+print(ans3)
+print(ans4)
