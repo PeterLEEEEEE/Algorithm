@@ -1,6 +1,5 @@
-n = [1,2,3,4,5,6,2,2,4]
+n = [1111, 1112]
 
-del n[1]
-print(n)
-del n[1]
-print(n)
+n.sort()
+
+print(len(n[0]))
