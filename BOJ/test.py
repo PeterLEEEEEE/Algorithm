@@ -1,9 +1,20 @@
-seconds = int(input())
-amount = [10, 30, 20, 30]
-time = [300, 130, 120, 20]
-ans = 0
-while seconds != 0:
-    
-    
+n = int(input())
 
-print(ans)
+stack = []
+cnt = 0
+
+for _ in range(n):
+    arr = list(input())
+    
+    for i in arr:
+        if not stack or stack[-1] != i:
+            stack.append(i)
+        elif stack[-1] == i:
+            stack.pop()
+        
+    if not stack:
+        cnt += 1
+    
+    stack.clear()
+
+print(cnt)
