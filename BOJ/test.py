@@ -1,20 +1,35 @@
-n = int(input())
+s = "([)]"
 
 stack = []
-cnt = 0
 
-for _ in range(n):
-    arr = list(input())
-    
-    for i in arr:
-        if not stack or stack[-1] != i:
-            stack.append(i)
-        elif stack[-1] == i:
-            stack.pop()
-        
-    if not stack:
-        cnt += 1
-    
-    stack.clear()
+flag = 0
 
-print(cnt)
+for i in s:
+    if i == '(' or i == '{' or i == '[':
+        stack.append(i)
+    
+    if stack:
+        tmp = stack.pop()
+        if i == ')':
+            if tmp != '(':
+                flag = 1
+                
+        elif i == '}':
+            if tmp != '{':
+                flag = 1
+                
+        elif i == ']':
+            if tmp != '[':
+                flag = 1
+                
+    else:
+        if i == ')' or i == ']' or i == '}':
+            flag == 1
+    
+    if flag == 1:
+        break
+
+if flag == 1:
+    return False
+else:
+    return True
