@@ -1,11 +1,22 @@
 def top(nums, k):
     if not nums:
         return []
+    elif len(nums) == 1:
+        return nums
     
     arr = []
+    maxnum = 0
+    for i in set(nums):
+        arr.append([i, nums.count(i)])
+    
+    arr.sort(key=lambda x: -x[1])
+    
+    print(arr)
 
 
-nums = [1,1,1,2,2,3]
+k = 2
+nums = [1,1,2,2,2,2,3,3,3]
+top(nums, k)
 
 
 
