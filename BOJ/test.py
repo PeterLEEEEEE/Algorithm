@@ -1,35 +1,24 @@
-s = "([)]"
+import math
 
-stack = []
+a = '1+1i'
 
-flag = 0
+arr = a.split('+')
+a_real = int(arr[0])
+a_imag = int(arr[1][:-1])
 
-for i in s:
-    if i == '(' or i == '{' or i == '[':
-        stack.append(i)
-    
-    if stack:
-        tmp = stack.pop()
-        if i == ')':
-            if tmp != '(':
-                flag = 1
-                
-        elif i == '}':
-            if tmp != '{':
-                flag = 1
-                
-        elif i == ']':
-            if tmp != '[':
-                flag = 1
-                
-    else:
-        if i == ')' or i == ']' or i == '}':
-            flag == 1
-    
-    if flag == 1:
-        break
+a = complex(a_real, a_imag)
+print(a)
 
-if flag == 1:
-    return False
-else:
-    return True
+b = '1+1i'
+
+arr = b.split('+')
+b_real = int(arr[0])
+b_imag = int(arr[1][:-1])
+
+b = complex(b_real, b_imag)
+print(b)
+
+c = a * b
+
+
+print(f'{math.floor(c.real)}+{math.floor(c.imag)}i')
