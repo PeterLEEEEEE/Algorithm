@@ -10,8 +10,9 @@ for i in range(2, n+1):
     for j in range(i):
         if arr[j] < arr[i]:
             dp[i] = max(dp[i], dp[j] + arr[i])
-        else:
-            dp[i] = max(dp[i], arr[i])
+        # else:
+        #     dp[i] = max(dp[i], arr[i])
 
-# dp.sort()
+
+# print(dp)
 print(max(dp))
