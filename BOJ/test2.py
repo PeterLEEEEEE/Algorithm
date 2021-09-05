@@ -1,20 +1,7 @@
-n = 20
+print(len('https://an2-img.amz.wtchn.net/image/v2/b771eb73a5e38b9de61ae1acb3e8e454.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPak0yTUN3aWNHRjBhQ0k2SWk5Mk1TOWtZMjV6ZDNReU1tcDFNbmt5Ykc1a2FuQndjQ0lzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk5qUXdmUS5QUm9mUXdVYUxsX0xyRksxdURLRnl6akJndXNxU3RLSVBfMnlkNzJMSVZv'))
 
-n = bin(n)[2:]
-print(n)
-flag = 0
-cnt = 0
-for i in n:
-    if flag == 0 and i == 1:
-        flag = 1
+# import random
 
-    if flag == 1:
-        cnt += 1
-# arr.insert(0, 0)
-# arr.append(0)
-# max_len = 0
-# for i in range(1, len(arr)-1):
-#     if arr[i-1] == '' and arr[i+1] == '':
-#         max_len = max(max_len, len(arr[i]))
+# num_list = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0]
 
-# print(max_len)
+# print(random.choice(num_list))
