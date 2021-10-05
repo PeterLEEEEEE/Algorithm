@@ -11,7 +11,9 @@ dp[0] = 0
 
 for i in range(1, k+1):
     for coin in coins:
-        dp[i] = min(dp[i], dp[i-coin] + 1)
+        if i - coin < 0:
+            break
+        dp[i] = min(dp[i], dp[i-coin] + p1)
 
 if dp[k] == 10001:
     print(-1)
