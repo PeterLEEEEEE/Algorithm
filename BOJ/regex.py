@@ -1,8 +1,8 @@
 import re
 while True:
-    password = input()
+    email = input()
 
-    if not re.match("^(?=.*\d)[\d]{9,11}$", password):
+    if not re.match('^[a-zA-Z\d+-.]+@[a-zA-Z\d+-.]+\.[a-zA-Z]{2,3}$', email):
         print('not match')
     else:
         print('match')
