@@ -1,10 +1,18 @@
-def dfs(numbers, target, score, idx, ans):
-    if idx == len(numbers):
-        pass
-    return ans
+ans = 0
+
+def dfs(numbers, target, score, idx):
+    if idx >= len(numbers):
+        if score == target:
+            global ans 
+            ans += 1
+        return
+
+    dfs(numbers, target, score+numbers[idx], idx+1)
+    dfs(numbers, target, score-numbers[idx], idx+1)
+
 
 def solution(numbers, target):
-    ans = dfs(numbers, target, 0, 0, 0)
+    dfs(numbers, target, 0, 0)
 
     return ans
 
