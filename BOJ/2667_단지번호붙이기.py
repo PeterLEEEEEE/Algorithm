@@ -3,7 +3,6 @@ complex = int(input())
 complexes = []
 cnt = 0
 ans = [0]
-dy, dx = [-1, 1, 0, 0], [0, 0, -1, 1]
 
 
 def dfs(y, x):
@@ -23,6 +22,7 @@ def dfs(y, x):
 
     return True
 
+
 for _ in range(complex):
     complexes.append(list(map(int, input())))
 
@@ -39,5 +39,4 @@ ans = ans[:1] + sorted(ans[1:])
 # print(ans[0])  # int 3
 # print(type(ans[:1]))  # list
 # print(ans[:1])  # list [3]
-
 print(*ans, sep='\n')
