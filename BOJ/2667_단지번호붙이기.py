@@ -23,7 +23,6 @@ def dfs(y, x):
 
     return True
 
-
 for _ in range(complex):
     complexes.append(list(map(int, input())))
 
