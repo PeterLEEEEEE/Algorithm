@@ -3,8 +3,6 @@ complex = int(input())
 complexes = []
 cnt = 0
 ans = [0]
-dy, dx = [-1, 1, 0, 0], [0, 0, -1, 1]
-
 
 def dfs(y, x):
     global cnt
