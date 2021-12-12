@@ -39,4 +39,5 @@ ans = ans[:1] + sorted(ans[1:])
 # print(ans[0])  # int 3
 # print(type(ans[:1]))  # list
 # print(ans[:1])  # list [3]
+
 print(*ans, sep='\n')
