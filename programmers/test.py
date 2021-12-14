@@ -1,4 +1,1 @@
-a = []
-b = [2]
-
-print(a+b)
+print([False for _ in range(3)])
