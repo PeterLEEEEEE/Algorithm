@@ -25,3 +25,4 @@ for i in arr:
 
 dfs(network, 1)
 print(len(visited)-1)
+
