@@ -3,20 +3,17 @@ from collections import deque
 sys.setrecursionlimit(10**6)
 t = int(input())
 
-
-def dfs(x, y):
+def dfs(x,y):
     if x < 0 or x >= n or y < 0 or y >= m:
-        return False
-    
+        return
     if field[x][y] == 1:
         field[x][y] = 0
-
+    
         dfs(x-1, y)
         dfs(x+1, y)
         dfs(x, y-1)
         dfs(x, y+1)
-        return True
-    return False
+    return
 
 for _ in range(t):
     n, m, k = map(int, input().split())
@@ -28,7 +25,8 @@ for _ in range(t):
     
     for i in range(n):
         for j in range(m):
-            if dfs(i, j) == True:
+            if field[i][j] == 1:
+                dfs(i,j)
                 ans += 1
 
     print(ans)
