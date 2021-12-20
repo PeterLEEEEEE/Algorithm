@@ -1,3 +1,4 @@
+# 미완성
 import sys, copy
 from collections import deque
 input = sys.stdin.readline
