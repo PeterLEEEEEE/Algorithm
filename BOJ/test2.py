@@ -1,4 +1,4 @@
-hi = '2020-02-02'
+arr = ['h', 'g', ' ', 'f', 'e']
 
-
-print(hi.replace('-', '.'))
+a = ''.join(arr)[::-1]
+print(a)
