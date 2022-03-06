@@ -55,7 +55,6 @@ while len(s) != len(t):
         flag = 1
         break
     
-
 if flag == 1:
     print(1)
 else:

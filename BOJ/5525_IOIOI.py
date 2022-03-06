@@ -30,6 +30,7 @@ input = sys.stdin.readline
 arr = input().rstrip()
 
 ans = 0
+flag = 0
 a = 'IOI'
 b = 'OI'
 
@@ -39,7 +40,13 @@ elif n >= 2:
     pat = a + (b * (n - 1))
 
 for i in range(len(arr) - len(pat)):
+    if flag == 1:
+        flag = 0
+        continue
+    
     if arr[i:i+len(pat)] == pat:
+        flag = 1
         ans += 1
+        
 
 print(ans)
