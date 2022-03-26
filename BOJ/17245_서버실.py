@@ -26,7 +26,7 @@ while start <= end:
             else:
                 cur_sum += mid
     
-    if cur_sum >= computers // 2:
+    if cur_sum >= computers / 2:
         lev = mid
         end = mid - 1
     else:
