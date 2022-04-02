@@ -1,7 +1,9 @@
-from collections import deque
-q = deque()
-q.append([0, 0])
-x, y = q.popleft()
+from os import lseek
 
-print(x, y)
 
+# dic = dict(type='lee', img=(3333,3333))
+
+bbox = [[1,4], [3,1], [5, 6]]
+bbox.sort(key=lambda x: x[0])
+
+print(bbox)
