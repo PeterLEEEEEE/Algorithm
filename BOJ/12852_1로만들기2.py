@@ -18,7 +18,7 @@ for i in range(3, N + 1):
         dp[i][0] = dp[i // 3][0] + 1
         dp[i][1] = dp[i // 3][1] + [i]
     
-    elif i % 2 == 0 and dp[i//2][0] + 1 < dp[i][0]:
+    if i % 2 == 0 and dp[i//2][0] + 1 < dp[i][0]:
         dp[i][0] = dp[i // 2][0] + 1
         dp[i][1] = dp[i // 2][1] + [i]
     
