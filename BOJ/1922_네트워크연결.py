@@ -24,7 +24,6 @@ def union(parent, a, b):
     else:
         parent[a] = b
     
-    
 
 for i in range(1, N+1):
     parent[i] = i
