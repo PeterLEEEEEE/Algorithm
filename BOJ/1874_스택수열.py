@@ -1,11 +1,12 @@
 import sys
 
 input = sys.stdin.readline
+N = int(input())
 stack = []
 answer = []
 flag = 0
 cur = 1
-for i in range(n):
+for i in range(N):
     num = int(input())
     while cur <= num:       
         stack.append(cur)
