@@ -8,7 +8,6 @@ checker = []
 for i in range(R):
     arr.append(input().rstrip())
 
-print(arr[1][1])
 
 for i in range(R):
     temp = ''
@@ -23,20 +22,22 @@ for i in range(R):
     if len(temp) >= 2:
         checker.append(temp)
 
-print(checker)
+
 
 for i in range(C):
-    for j in arr[j][i]:
-        temp = ''
-    for j in arr[i]:
-        if j == '#':
+    temp = ''
+    for j in range(R):
+        
+        if arr[j][i] == '#':
             if len(temp) >= 2:
                 checker.append(temp)
             temp = ''
             
         else:
-            temp += j
+            temp += arr[j][i] 
+    
     if len(temp) >= 2:
         checker.append(temp)
 
-print(checker)
+checker.sort() 
+print(checker[0])
