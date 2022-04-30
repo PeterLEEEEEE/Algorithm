@@ -4,28 +4,38 @@ input = sys.stdin.readline
 
 N = int(input())
 
-graph = []
+graph = [[0, 0] for _ in range(1001)]
 
-
-for _ in range(N):
+start = 0
+end = 0
+for i in range(N):
     L, H = map(int, input().split())
-    graph.append([L,H])
-    graph.sort(key=lambda x:x[0])
+    graph[L] = [L, H]
+    start = min(start, L)
+    end = max(end, L)
 
 
-print(graph)
+
 max_info = max(graph, key=lambda x:x[1])
-start = graph[0][0]
-end = graph[-1][0]
-mid = max_info[0]
-ans = max_info[1]
-max_idx = graph.index(max_info)
+max_idx = max_info[0]
+max_val = max_info[1]
 
-start_to_mid = [0] * (mid - start)
-# while True:
-#     if pivot < graph[0][0]:
-#         break
-pivot = start
-for i in range(len(start_to_mid)):
-    ans += pivot
+
+# mid = max_info[0]
+ans = 0
+
+
+
+get_area = 0
+for i in range(start, max_info[0]):
     
+    get_area = max(get_area, graph[i][1])
+    ans += get_area
+
+# print(ans)
+get_area = 0
+for i in range(end, max_info[0], -1):
+    get_area = max(get_area, graph[i][1])
+    ans += get_area
+
+print(ans + max_info[1])
