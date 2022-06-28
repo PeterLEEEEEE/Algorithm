@@ -1,3 +1,10 @@
-lo_score = {6: 1, 5: 2, 4: 3, 3: 4, 2: 5}
+def chain(*iterables):
+    
+    for it in iterables:
+        print(it)
+        for i in it:
+            yield i
 
-print(lo_score.get(7, 1111))
+s = 'ABC'
+t = tuple(range(3))
+print(list(chain(s, t)))
