@@ -3,8 +3,10 @@
 def solution(plans):
     answer = []
     plans.sort(key = lambda x:x[1])
-
-
+    plan_stack = []
+    for l in plans:
+        start_time = int(l[1].split()[0]*60) + int(l[1].split()[1])
+    print()
     return answer
 
 

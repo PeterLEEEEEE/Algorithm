@@ -15,14 +15,19 @@ network = {}
 for _ in range(conn):
     arr.append(list(map(int, input().split())))
 
-for i in arr:
-    network[i[0]] = []
-    network[i[1]] = []
+for i in range(1, 101):
+    network[i] = []
 
 for i in arr:
+    # network[i[0]] = network.get(i[0], []) + [i[1]]
     network[i[0]].append(i[1])
     network[i[1]].append(i[0])
+    # network[i[1]] = network.get(i[1], []) + [i[0]]
 
-dfs(network, 1)
-print(len(visited)-1)
+
+if len(network[1]) == 0:
+    print(0)
+else:
+    dfs(network, 1)
+    print(len(visited)-1)
 
