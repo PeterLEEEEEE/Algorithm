@@ -1,0 +1,20 @@
+-- 코드를 입력하세요
+# SELECT DISTINCT(CRCRH.CAR_ID)
+# FROM ( SELECT CAR_ID
+#         FROM CAR_RENTAL_COMPANY_CAR
+#         WHERE CAR_TYPE = '세단') CRCC 
+#     JOIN CAR_RENTAL_COMPANY_RENTAL_HISTORY CRCRH ON CRCC.CAR_ID = CRCRH.CAR_ID
+# WHERE MONTH(START_DATE)=10
+# ORDER BY CRCRH.CAR_ID DESC
+
+
+with base as (
+    select CAR_ID
+    from CAR_RENTAL_COMPANY_CAR 
+    where CAR_TYPE = '세단'
+)
+select DISTINCT b.CAR_ID
+from base b
+    join CAR_RENTAL_COMPANY_RENTAL_HISTORY h on b.CAR_ID = h.CAR_ID
+where month(START_DATE) = 10
+order by b.CAR_ID desc
