@@ -1,0 +1,172 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1773380996728,
+  "projectRoot": "/home/mhlee/dev/algorithm",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "0035-search-insert-position": {
+      "path": "0035-search-insert-position",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1773380996713,
+      "keyFiles": [
+        "0035-search-insert-position.py",
+        "README.md"
+      ]
+    },
+    "BOJ": {
+      "path": "BOJ",
+      "purpose": null,
+      "fileCount": 307,
+      "lastAccessed": 1773380996717,
+      "keyFiles": [
+        "10026_적록색약.py",
+        "1003_피보나치함수.py",
+        "10102_개표.py",
+        "1010_다리놓기.py",
+        "1012_유기농배추.py"
+      ]
+    },
+    "Leetcode": {
+      "path": "Leetcode",
+      "purpose": null,
+      "fileCount": 13,
+      "lastAccessed": 1773380996720,
+      "keyFiles": [
+        "169_majority_element.py",
+        "17_letter_combinations_of_a_phone_number.py",
+        "200_number_of_island.py",
+        "207_course_schedule.py",
+        "209_Minimum_Size_Subarray_Sum.py"
+      ]
+    },
+    "programmers": {
+      "path": "programmers",
+      "purpose": null,
+      "fileCount": 36,
+      "lastAccessed": 1773380996721,
+      "keyFiles": [
+        "N으로표현.py",
+        "k진수에서소수개수구하기.py",
+        "test.py",
+        "test2.py",
+        "공원산책.py"
+      ]
+    },
+    "백준": {
+      "path": "백준",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1773380996722,
+      "keyFiles": []
+    },
+    "이코테": {
+      "path": "이코테",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1773380996722,
+      "keyFiles": [
+        "1로만들기.py",
+        "미로탈출.py",
+        "바닥공사.py",
+        "음료수얼려먹기.py",
+        "효율적인화폐구성.py"
+      ]
+    },
+    "인프런": {
+      "path": "인프런",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1773380996723,
+      "keyFiles": [
+        "최대점수 구하기(dfs).py"
+      ]
+    },
+    "프로그래머스": {
+      "path": "프로그래머스",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1773380996724,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "BOJ/template.py",
+      "accessCount": 3,
+      "lastAccessed": 1773381293910,
+      "type": "file"
+    },
+    {
+      "path": "BOJ/1012_유기농배추.py",
+      "accessCount": 1,
+      "lastAccessed": 1773381051193,
+      "type": "file"
+    },
+    {
+      "path": "BOJ/14502_연구소.py",
+      "accessCount": 1,
+      "lastAccessed": 1773381051742,
+      "type": "file"
+    },
+    {
+      "path": "BOJ/11659_구간합구하기4.py",
+      "accessCount": 1,
+      "lastAccessed": 1773381052106,
+      "type": "file"
+    },
+    {
+      "path": "BOJ/2026/숫자카드.py",
+      "accessCount": 1,
+      "lastAccessed": 1773381052592,
+      "type": "file"
+    },
+    {
+      "path": "BOJ/15686_치킨배달.py",
+      "accessCount": 1,
+      "lastAccessed": 1773381053041,
+      "type": "file"
+    },
+    {
+      "path": "BOJ/2026/10815_숫자카드.py",
+      "accessCount": 1,
+      "lastAccessed": 1773381854065,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 1,
+      "lastAccessed": 1773382696740,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
